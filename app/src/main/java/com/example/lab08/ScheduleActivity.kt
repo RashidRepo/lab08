@@ -25,6 +25,9 @@ class ScheduleActivity : AppCompatActivity() {
         binding.dateText.text = intent.getStringExtra("date")
         binding.timeText.text = intent.getStringExtra("time")
 
+//        binding.ratingBar.setOnRatingBarChangeListener { ratingBar, rating, fromUser ->
+//            binding.ratingText.text = "Rating: $rating"
+//        }
 
         binding.sendBtn.setOnClickListener {
             binding.ratingText.text = binding.ratingBar.rating.toString()
